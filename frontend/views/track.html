@@ -1,0 +1,12 @@
+<h2>Track a Case</h2>
+<form ng-submit="trackCase()">
+    <label>Case ID:</label>
+    <input type="text" ng-model="caseId" required>
+    <button type="submit">Track</button>
+</form>
+
+<div ng-if="caseDetails">
+    <h3>Status: {{ caseDetails.status }}</h3>
+    <p>Last Updated: {{ caseDetails.lastUpdated }}</p>
+    <p>Assigned Officer: {{ caseDetails.officer }}</p>
+</div>

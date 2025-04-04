@@ -1,0 +1,17 @@
+<h2>Report a Crime</h2>
+<form ng-submit="submitReport()">
+    <label>Crime Type:</label>
+    <input type="text" ng-model="crime.type" required><br>
+
+    <label>Description:</label>
+    <textarea ng-model="crime.description" required></textarea><br>
+
+    <label>Location:</label>
+    <input type="text" ng-model="crime.location" required><br>
+
+    <label>Evidence (URL or Text):</label>
+    <input type="text" ng-model="crime.evidence"><br>
+
+    <button type="submit">Submit Report</button>
+</form>
+<p>{{ message }}</p>

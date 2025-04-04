@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="crimeApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crime Reporting & Tracking System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/reportController.js"></script>
+    <script src="js/controllers/trackController.js"></script>
+    <script src="js/controllers/alertsController.js"></script>
+    <script src="js/controllers/analyticsController.js"></script>
+</head>
+
+<body>
+    <h1>Crime Reporting & Tracking System</h1>
+
+    <nav>
+        <a href="#!/report">Report Crime</a>
+        <a href="#!/track">Track Case</a>
+        <a href="#!/alerts">Crime Alerts</a>
+        <a href="#!/analytics">Crime Analysis</a>
+    </nav>
+
+    <div ng-view></div>
+</body>
+
+</html>

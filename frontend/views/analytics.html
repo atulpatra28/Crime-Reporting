@@ -1,0 +1,11 @@
+<h2>Crime Analysis & Reports</h2>
+<label>Choose Analysis Type:</label>
+<select ng-model="strategy" ng-change="runAnalysis()">
+    <option value="monthly">Monthly Report</option>
+    <option value="byType">By Crime Type</option>
+</select>
+
+<div ng-if="analysisResult">
+    <h3>Analysis Result:</h3>
+    <pre>{{ analysisResult | json }}</pre>
+</div>
