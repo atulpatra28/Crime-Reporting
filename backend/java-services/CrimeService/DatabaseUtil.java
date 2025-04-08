@@ -7,7 +7,7 @@ import java.sql.PreparedStatement;
 public class DatabaseUtil {
     private static final String URL = "jdbc:mysql://localhost:3306/crime_reporting";
     private static final String USER = "root"; // use your MySQL username
-    private static final String PASSWORD = "iamatulletmein"; // use your MySQL password
+    private static final String PASSWORD = ""; // use your MySQL password
 
     public static void insertCrimeReport(String type, String location, String description, String reporter) {
         try {
